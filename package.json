@@ -1,5 +1,5 @@
 {
-  "name": "starter-angular",
+  "name": "children-culture",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,13 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tiagodws/starter-angular"
+    "url": "https://github.com/sidneibiz/children-culture"
   },
   "author": "Tiago Dionesto",
   "bugs": {
-    "url": "https://github.com/tiagodws/starter-angular/issues"
+    "url": "https://github.com/sidneibiz/children-culture/issues"
   },
-  "homepage": "https://github.com/tiagodws/starter-angular#readme",
+  "homepage": "https://github.com/sidneibiz/children-culture#readme",
   "dependencies": {
     "angular": "^1.6.4",
     "angular-ui-router": "^0.4.2",
