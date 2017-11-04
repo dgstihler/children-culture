@@ -1,22 +1,19 @@
 <html>
 
 <head>
-    <base href="/">
-    <meta charset="utf-8">
-    <title>Angular</title>
+  <base href="/">
+  <meta charset="utf-8">
+  <title>Children Culture</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body ng-app="app">
-    <div ng-controller="UserController as $ctrl">
-        <div ng-if="$ctrl.error">
-            <span>Error: {{$ctrl.error.message}}</span>
-        </div>
-        <div ng-if="$ctrl.user">
-            <p>Name: {{$ctrl.user.name}}</p>
-            <p>Username: {{$ctrl.user.username}}</p>
-            <img ng-src="{{$ctrl.user.avatar}}" title="{{$ctrl.user.name}}" />
-        </div>
+  <navbar></navbar>
+  <div class="container">
+    <div class="main" ui-view>
     </div>
+  </div>
+  <footer></footer>
 </body>
 
 </html>
