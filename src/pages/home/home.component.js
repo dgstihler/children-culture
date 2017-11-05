@@ -9,7 +9,7 @@ class HomeController {
     this.cards = [{
       'title': 'Brasil',
       'description': 'Cultura',
-      'img': require('../../images/oi.jpg'),
+      'img': require('../../images/brasil.png'),
       'labelButton': 'Ver'
     }]
   }

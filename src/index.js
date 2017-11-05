@@ -2,7 +2,6 @@ import angular from "angular";
 import "angular-ui-router";
 import routes from "./routes";
 
-import UserController from "./controllers/UserController";
 // components
 import navBarComponent from './components/navbar/navbar.component';
 import footerComponent from './components/footer/footer.component';
@@ -25,7 +24,6 @@ angular
   
   // pages
   .component('homePage', homeComponent)
-  .controller("UserController", UserController)
 
   .config(routes)
   ;
