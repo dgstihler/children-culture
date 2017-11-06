@@ -1,8 +1,8 @@
-<div class="card hoverable" style="width: 20rem;">
-  <img class="card-img-top" ng-src="../../../" alt="Card image cap">
+<div class="card hoverable">
+  <img class="card-img-top" ng-src="{{$ctrl.img}}" alt="Card image cap">
   <div class="card-body">
     <h4 class="card-title">{{$ctrl.title}}</h4>
     <p class="card-text">{{$ctrl.description}}</p>
-    <a href="#" class="btn btn-primary">{{$ctrl.labelButton}}</a>
+    <a class="btn btn-success btn-sm btn-block" ng-click="$ctrl.click()"><img ng-src="{{$ctrl.labelButton}}" ></a>
   </div>
 </div>

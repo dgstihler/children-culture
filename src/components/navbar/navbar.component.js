@@ -1,16 +1,17 @@
-"use strict";
 import template from "./navbar.html";
 import './navbar.scss';
 
-class NavBarController {
+export default {
+  template,
+  controller
+};
 
-  constructor() {
-    "ngInject";
+function controller() {
+  const $ctrl = this;
 
-  }
 }
 
-export default {
-  template: template,
-  controller: NavBarController
-};
+function controller() {
+  const $ctrl = this;
+  $ctrl.state = 'br';
+}

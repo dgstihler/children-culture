@@ -1,1 +1,4 @@
-<card ng-repeat="card in $ctrl.cards" style="width: 20rem;" title="{{card.title}}" label-button="{{card.labelButton}}" description="{{card.description}}" img="{{card.img}}"></card>
+<div class="home">
+  <card ng-repeat="card in $ctrl.cards" style="width: 20rem;" title="{{card.title}}" label-button="{{card.labelButton}}" description="{{card.description}}"
+    img="{{card.img}}" type="{{card.type}}" action="card.action"></card>
+</div>

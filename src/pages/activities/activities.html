@@ -1,0 +1,16 @@
+<div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="{{$ctrl.percent}}"
+    aria-valuemin="0" aria-valuemax="100" ng-class="$ctrl.getPercent($ctrl.percent)">{{$ctrl.percent}} %</div>
+</div>
+
+<div class="home">
+  <card ng-repeat="card in $ctrl.cards" style="width: 20rem;" title="{{card.title}}" label-button="{{card.labelButton}}" description="{{card.description}}"
+    img="{{card.img}}" opcao="{{card.opcao}}" action="card.action"></card>
+  <div class="card result">
+    <img class="card-img-result" ng-src="{{$ctrl.imgResult}}" alt="Card image cap">
+    <div class="card-body">
+      <h4 class="card-title">Resultado</h4>
+      <p class="card-text">{{$ctrl.descriptionResult}}</p>
+    </div>
+  </div>
+</div>

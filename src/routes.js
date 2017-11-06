@@ -6,6 +6,27 @@ function routes($stateProvider, $urlRouterProvider, $locationProvider) {
 
     $stateProvider.state('home', {
         url: '/',
-        component: 'homePage'
+        component: 'homeComponent',
+        params: {
+            done: {
+                'br': false,
+                'jp': false,
+                'france': false
+            }
+        }
+    }).state('activities', {
+        url: '/activities',
+        component: 'activitiesComponent',
+        params: {
+            type: undefined,
+            dones: {
+                'br': false,
+                'jp': false,
+                'france': false
+            }
+        },
+        onEnter: ($state, $stateParams) => {
+            if (!$stateParams.type) return $state.transitionTo('home');
+        }
     })
 }

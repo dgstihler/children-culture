@@ -1,11 +1,18 @@
+card {
+  padding: 20px;
+}
+
 .card {
   margin: 15px;
   cursor: pointer;
+  // padding: 20px !important;
 }
 
 .card-img-top {
   align-items: center;
   text-align: center;
+  height: 250px;
+  width: 248px;
 }
 
 .hoverable:hover {
